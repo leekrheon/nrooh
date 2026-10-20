@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex, nofollow">
+<title>Narrative Club</title>
+<noscript><meta http-equiv="refresh" content="0; url=https://club.narrative.im/kr#top"></noscript>
+<style>html,body{margin:0;background:#fff}@media(prefers-color-scheme:dark){html,body{background:#000}}</style>
+<script>
+  // 이동할 최종 주소
+  var TARGET = "https://club.narrative.im/kr#top";
+  var moved = false;
+  function go() {
+    if (moved) return;
+    moved = true;
+    location.replace(TARGET); // 뒤로가기 시 이 페이지로 돌아오지 않음
+  }
+  // Vercel Web Analytics 큐 (스크립트 로드 전에도 호출 가능)
+  window.va = window.va || function () { (window.vaq = window.vaq || []).push(arguments); };
+  // 안전장치: 분석 스크립트가 늦거나 차단돼도 최대 1초 안에 이동
+  setTimeout(go, 1000);
+</script>
+<!-- Vercel Web Analytics: 로드되면 페이지뷰 1회 전송 후 바로 이동 -->
+<script defer src="/_vercel/insights/script.js"
+        onload="setTimeout(go, 250)"
+        onerror="go()"></script>
+</head>
+<body></body>
+</html>
